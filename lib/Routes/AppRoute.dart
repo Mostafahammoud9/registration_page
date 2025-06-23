@@ -1,5 +1,3 @@
 class AppRoute{
-  static const String = '/register';
-
-  static var register;
+  static const String register = '/register';
 }
