@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
+import 'package:registration_page/Bindings/LoginBinding.dart';
 import 'package:registration_page/Bindings/RegistrationBinding.dart';
 import 'package:registration_page/Routes/AppRoute.dart';
+import 'package:registration_page/Views/Login.dart';
 import 'package:registration_page/Views/Registration.dart';
 
 class Apppage {
@@ -11,5 +13,13 @@ static final List<GetPage> pages = [
     page: () => Registration(),
     binding: RegistrationBinding(),
     ),
+    GetPage(
+      name: AppRoute.login,
+      page: () =>Login(),
+      binding: LoginBinding(),
+    )
+
+
 ];
+
 } 
