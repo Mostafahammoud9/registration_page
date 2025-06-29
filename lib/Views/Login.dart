@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:registration_page/Controllers/LoginController.dart';
+import 'package:registration_page/Routes/AppRoute.dart';
 
 class Login extends GetView<LoginController> {
 
@@ -46,6 +47,18 @@ class Login extends GetView<LoginController> {
                   child: const Text("Login"),
                 ),
               ),
+              const SizedBox(height: 12, ),
+              Center(
+                child: TextButton(
+                  onPressed: (){
+                    Get.toNamed(AppRoute.register);
+                  },
+                  child: Text(
+                    "Don't have an account? Register",
+                    style: TextStyle(fontSize: 18, color: Colors.blueAccent),
+                  ),  
+                ),
+              )
             ],
           ),
         ),
