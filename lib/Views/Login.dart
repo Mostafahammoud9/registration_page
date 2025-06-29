@@ -51,14 +51,14 @@ class Login extends GetView<LoginController> {
               Center(
                 child: TextButton(
                   onPressed: (){
-                    Get.toNamed(AppRoute.register);
+                    Get.toNamed(AppRoute.register );
                   },
                   child: Text(
                     "Don't have an account? Register",
                     style: TextStyle(fontSize: 18, color: Colors.blueAccent),
                   ),  
                 ),
-              )
+              ),
             ],
           ),
         ),

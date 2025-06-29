@@ -22,8 +22,8 @@ class Registration extends GetView<Registrationcontroller> {
               const SizedBox(height: 16),
               const Text("Name:"),
               const SizedBox(height: 4),
-              const TextField(
-                decoration: InputDecoration(
+              TextField(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: "Enter your full name",
                 ),
@@ -60,7 +60,7 @@ class Registration extends GetView<Registrationcontroller> {
               Center(
                 child: ElevatedButton(
                   onPressed: () {
-                    // Action when user presses "register"
+                    controller.register();
                   },
                   child: const Text("Register"),
                 ),
